@@ -1,5 +1,6 @@
 body {
-  background: url("")
+  background-image: url("../images/background.jpg");
+  margin: 0;
 }
 main {
   margin: 0 10%;
@@ -11,4 +12,9 @@ header {
 header img {
   width: 100%;
   height: auto;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #333;
 }
