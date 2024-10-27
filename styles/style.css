@@ -1,3 +1,14 @@
+body {
+  background: url("")
+}
+main {
+  margin: 0 10%;
+}
 header {
-    background: url("../images/nwtemc_banner_2008.png")
+  width: 100%;
+}
+
+header img {
+  width: 100%;
+  height: auto;
 }
