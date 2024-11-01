@@ -1,14 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("../images/background.jpg");
   margin: 0;
 }
 
-main {
-  margin: 0 10%;
-}
+@media (min-width: 1024px) {
 
-header {
-  width: 100%;
+  main {
+    margin: 0 10%;
+  }
 }
 
 header img {
@@ -26,7 +29,7 @@ nav {
 
 }
 
-nav > a {
+nav>a {
   font-size: 16px;
   color: white;
   text-align: center;
@@ -62,7 +65,6 @@ nav a:hover,
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -82,7 +84,6 @@ nav a:hover,
   text-align: left;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+.hidden {
+  display: none;
 }
