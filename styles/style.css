@@ -1,50 +1,70 @@
+/* Page Theme Colors */
+:root {
+  --primary: #333;
+  --secondary: white;
+  --tertiary: black;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+}
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    padding: 0 15%;
+  }
 }
 
 body {
   background-image: url("../images/background.jpg");
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (min-width: 1024px) {
-
-  main {
-    margin: 0 10%;
-  }
+header {
+  margin: 0;
 }
 
 header img {
   width: 100%;
   height: auto;
+  margin: 0;
 }
 
+/******* Navigation Bar Styles *******/
 nav {
   display: flex;
   justify-content: flex-start;
-  /* Align items to the start */
-  background-color: #333;
+  background-color: var(--primary);
   font-family: Arial;
-  /* overflow: hidden; */
-
+  margin: 0px;
 }
 
 nav>a {
+  color: var(--secondary);
   font-size: 16px;
-  color: white;
-  text-align: center;
   padding: 14px 16px;
+  text-align: center;
   text-decoration: none;
 }
 
-/*dropdown container */
+/******* Dropdown Styles *******/
 .dropdown {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-/*dropdown button */
 .dropdown button {
   font-size: 16px;
   border: none;
@@ -56,14 +76,6 @@ nav>a {
   margin: 0;
 }
 
-/* Add a white background color to navbar links on hover */
-nav a:hover,
-.dropdown:hover .button {
-  background-color: white;
-  color: black;
-}
-
-/* Dropdown content (hidden by default) */
 .dropdown-content {
   position: absolute;
   top: 100%;
@@ -82,8 +94,36 @@ nav a:hover,
   color: black;
   margin: 0 8px 8px;
   text-align: left;
+  text-decoration: none;
 }
 
-.hidden {
-  display: none;
+/******* Time Display *******/
+#time-container {
+  display: inline-block;
+  font-size: 16px;
+  color: var(--secondary);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+/******* Main Section Styles *******/
+#main-section {
+  flex: 3;
+  background-color: var(--secondary);
+  margin-right: 5%;
+  padding: 8px;
+}
+/******* Tribal Partners Styles *******/
+#tribal-partners {
+  flex: 1;
+  background-color: var(--secondary);
+  padding: 8px;
 }
