@@ -17,3 +17,7 @@ section {
     background-color: white;
     padding: 8px;
 }
+
+#docs ul li {
+    padding: 8px 0;
+}
