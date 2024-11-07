@@ -1,4 +1,4 @@
-const isTouchDevice = ontouchstart in window;
+const isTouchDevice = "ontouchstart" in window;
 const dropdown = document.querySelector(".dropdown");
 const menuIcon = document.querySelector("i");
 const dropdownContent = document.querySelector(".dropdown-content");
