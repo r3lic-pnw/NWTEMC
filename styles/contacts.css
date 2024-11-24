@@ -1,0 +1,29 @@
+main {
+  display: block;
+}
+
+main header h1 {
+  text-align: center;
+  margin: 8px 0;
+  background-color: white;
+  padding: 8px;
+}
+
+h3 {
+  text-align: center;
+}
+
+article {
+  background-color: white;
+  padding: 8px;
+}
+
+section>div{
+  margin-bottom: 8px;
+  padding: 8px 8px 0;
+  border: 2px solid black;
+}
+
+section>div>h4 {
+  margin: 0 auto;
+}
