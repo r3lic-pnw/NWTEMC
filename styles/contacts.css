@@ -9,7 +9,7 @@ main header h1 {
   padding: 8px;
 }
 
-h3 {
+h3, article header {
   text-align: center;
 }
 
