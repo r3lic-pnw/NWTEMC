@@ -1,11 +1,13 @@
-main {
-  display: block;
+/* Page Theme Colors */
+:root {
+  --primary: #333;
+  --secondary: white;
+  --tertiary: black;
 }
 
-main header h1 {
+main div header h1 {
   text-align: center;
   margin: 8px 0;
-  background-color: white;
   padding: 8px;
 }
 
@@ -13,8 +15,14 @@ h3, article header {
   text-align: center;
 }
 
+h3 {
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 8px;
+}
+
 article {
-  background-color: white;
+  background-color: var(--secondary);
   padding: 8px;
 }
 

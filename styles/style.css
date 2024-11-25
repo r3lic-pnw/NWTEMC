@@ -90,11 +90,17 @@ nav>a {
 
 .dropdown-content a {
   display: inline-block;
-  width: 100%;
   color: black;
-  margin: 0 8px 8px;
   text-align: left;
   text-decoration: none;
+  width: 100%;
+  /* margin: 0 8px 8px; */
+  padding: 8px;
+}
+
+.dropdown-content a.active {
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 /******* Time Display *******/

@@ -1,23 +1,19 @@
-main {
-    display: block;
-}
-
-main header h1 {
-    text-align: center;
-    margin: 8px 0;
-    background-color: white;
-    padding: 8px;
+main div header h1 {
+  background-color: white;
+  text-align: center;
+  margin: 8px 0;
+  padding: 8px;
 }
 
 #purpose {
-    text-align: justify;
+  text-align: justify;
 }
 
 section {
-    background-color: white;
-    padding: 8px;
+  background-color: white;
+  padding: 8px;
 }
 
 #docs ul li {
-    padding: 8px 0;
+  padding: 8px 0;
 }
