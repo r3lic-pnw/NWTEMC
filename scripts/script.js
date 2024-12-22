@@ -11,6 +11,12 @@ dropdown.ontouchstart = (e) => {
   dropdownContent.classList.toggle("hidden");
 }
 
+dropdown.onclick = (e) => {
+  menuIcon.classList.toggle("fa-angle-down");
+  menuIcon.classList.toggle("fa-angle-right");
+  dropdownContent.classList.toggle("hidden");
+}
+
 if (!("ontouchstart" in window)) {
   dropdown.onmouseover = (e) => {
     menuIcon.classList.toggle("fa-angle-down");
