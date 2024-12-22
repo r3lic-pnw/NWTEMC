@@ -17,3 +17,7 @@ section {
 #docs ul li {
   padding: 8px 0;
 }
+
+#history p {
+  text-align: justify;
+}

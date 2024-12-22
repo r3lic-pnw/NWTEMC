@@ -5,6 +5,10 @@
   --tertiary: black;
 }
 
+html {
+  font-size: 36px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,11 +22,19 @@
   color: var(--tertiary);
 }
 
-@media screen and (min-width: 1024px) {
+.post {
+  margin: 8px;
+  border: 2px solid black;
+  padding: 0 8px 8px;
+}
 
-  body {
-    padding: 0 15%;
-  }
+.post h2, .post h3 {
+  margin: 8px 0;
+  text-align: center;
+}
+
+.post p, .post footer {
+  text-align: justify;
 }
 
 body {
@@ -39,6 +51,17 @@ header img {
   width: 100%;
   height: auto;
   margin: 0;
+}
+
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+main h1 {
+  text-align: center;
 }
 
 /******* Navigation Bar Styles *******/
@@ -102,6 +125,7 @@ nav>a {
   background-color: var(--primary);
   color: var(--secondary);
 }
+/* ************** */
 
 /******* Time Display *******/
 #time-container {
@@ -113,23 +137,57 @@ nav>a {
   text-decoration: none;
   margin-left: auto;
 }
+/* ************** */
 
-main {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
-}
+
 
 /******* Main Section Styles *******/
 #main-section {
-  flex: 3;
   background-color: var(--secondary);
-  margin-right: 5%;
-  padding: 8px;
 }
+
 /******* Tribal Partners Styles *******/
 #tribal-partners {
-  flex: 1;
-  background-color: var(--secondary);
-  padding: 8px;
+  display: none;
+}
+
+
+/******* Media Query Styles *******/
+@media screen and (max-width: 1023px){
+  body {
+    margin: 0 5%;
+  }
+  
+  #main-section {
+    width: 100%;
+  }
+
+  #tribal-partners {
+    display: none;
+  }
+
+  #time-container {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    padding: 0 10%;
+  }
+
+  #tribal-partners {
+    display: block;
+    flex: 1;
+    background-color: var(--secondary);
+    padding: 8px;
+  }
+
+  #main-section {
+    flex: 3;
+    margin-right: 5%;
+    padding: 8px;
+  }
 }
